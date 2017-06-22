@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Fichier créé par Les Agences TV SEAP le 26/06/2013 10:51:38-->
+<PSI xsi:noNamespaceSchemaLocation="JADE_IRS_HighLevelFormat_M_OCS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mstns="http://tempuri.org/XMLDescription.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <NETWORK id="8442">
+    <TRANSPORT_STREAM id="14331" on_id="8442">
+      <SERVICE id="10" start_time="2016-03-25T08:00:00Z" duration="P0DT08H00M">
+       
+		<EVENT ca="false" time="2016-03-25T10:51:00Z" duration="P0DT00H02M30S">
+          <NAME lang="fre" encoding="05">Voyage en Islande -Kerlengjafjoll</NAME>
+          <SHORT_DESCRIPTION lang="fre" encoding="05">Kerlengjafjoll filmé par Christophe Nelson</SHORT_DESCRIPTION>
+          <DESCRIPTION lang="fre" encoding="05" />
+          <KIND dvb_content="0xFF" user_nibble="0x6B" />
+          <PARENTAL_RATING country="fra" dvb_rating="00" />
+          <DVB_COMPONENT lang="fre" component_tag="2" dvb_stream_content="0x02" description="AudioTrack" dvb_type="0x03" />
+          <DVB_COMPONENT lang="fre" component_tag="1" dvb_stream_content="0x01" description="16-9" dvb_type="0x03" />
+		</EVENT>
+		<EVENT ca="false" time="2016-03-25T10:53:30Z" duration="P0DT00H04M30S">
+          <NAME lang="fre" encoding="05">VTS</NAME>
+          <SHORT_DESCRIPTION lang="fre" encoding="05"></SHORT_DESCRIPTION>
+          <DESCRIPTION lang="fre" encoding="05" />
+          <KIND dvb_content="0xFF" user_nibble="0x6B" />
+          <PARENTAL_RATING country="fra" dvb_rating="00" />
+          <DVB_COMPONENT lang="fre" component_tag="2" dvb_stream_content="0x02" description="AudioTrack" dvb_type="0x03" />
+          <DVB_COMPONENT lang="fre" component_tag="1" dvb_stream_content="0x01" description="16-9" dvb_type="0x03" />
+		</EVENT>
+		<EVENT ca="false" time="2016-03-25T10:58:00Z" duration="P0DT00H02M17S">
+          <NAME lang="fre" encoding="05">Les Déboussolées - JOUR 76</NAME>
+          <SHORT_DESCRIPTION lang="fre" encoding="05">En sac à dos à travers l’Amérique du Sud. Sur une période de dix mois, nous, Clémence et Fanny, parcourons différents pays d’Amérique du Sud pour aller au devant de cultures et de sociétés inconnues...</SHORT_DESCRIPTION>
+          <DESCRIPTION lang="fre" encoding="05" />
+          <KIND dvb_content="0xFF" user_nibble="0x6B" />
+          <PARENTAL_RATING country="fra" dvb_rating="00" />
+          <DVB_COMPONENT lang="fre" component_tag="2" dvb_stream_content="0x02" description="AudioTrack" dvb_type="0x03" />
+          <DVB_COMPONENT lang="fre" component_tag="1" dvb_stream_content="0x01" description="16-9" dvb_type="0x03" />
+		</EVENT>
+		<EVENT ca="false" time="2016-03-25T11:00:00Z" duration="P0DT02H00M00S">
+          <NAME lang="fre" encoding="05">A vous de choisir !</NAME>
+          <SHORT_DESCRIPTION lang="fre" encoding="05">Réagissez en direct sur Twitter @chainemedia2016 pour choisir vos programmes préférés !</SHORT_DESCRIPTION>
+          <DESCRIPTION lang="fre" encoding="05" />
+          <KIND dvb_content="0xFF" user_nibble="0x6B" />
+          <PARENTAL_RATING country="fra" dvb_rating="00" />
+          <DVB_COMPONENT lang="fre" component_tag="2" dvb_stream_content="0x02" description="AudioTrack" dvb_type="0x03" />
+          <DVB_COMPONENT lang="fre" component_tag="1" dvb_stream_content="0x01" description="16-9" dvb_type="0x03" />
+		</EVENT>
+		<EVENT ca="false" time="2016-03-25T13:00:00Z" duration="P0DT00H14M00S">
+          <NAME lang="fre" encoding="05">En direct du BTS Audiovisuel de l'INA</NAME>
+          <SHORT_DESCRIPTION lang="fre" encoding="05">Projets EPS des BTS Audiovisuel de l'INA</SHORT_DESCRIPTION>
+          <DESCRIPTION lang="fre" encoding="05" />
+          <KIND dvb_content="0xFF" user_nibble="0x6B" />
+          <PARENTAL_RATING country="fra" dvb_rating="00" />
+          <DVB_COMPONENT lang="fre" component_tag="2" dvb_stream_content="0x02" description="AudioTrack" dvb_type="0x03" />
+          <DVB_COMPONENT lang="fre" component_tag="1" dvb_stream_content="0x01" description="16-9" dvb_type="0x03" />
+		</EVENT>
+      </SERVICE>
+    </TRANSPORT_STREAM>
+  </NETWORK>
+</PSI>

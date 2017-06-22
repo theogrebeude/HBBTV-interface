@@ -1,0 +1,478 @@
+/* 
+ * HBBTV Interface LP SAN INA 2016
+ * Pour projet Chaine media
+ * Théo Grébeude theogrebeude@gmail.com
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*
+outil DVB
+*/
+#oipf {
+	position: absolute;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+/*
+Fond Flux DVB-T
+*/
+#fond-live{
+    width: 1280px;
+    height: 720px;    
+}
+
+#live{
+    width: 1280px;
+    height: 720px; 
+}
+
+#live video {
+    width: 1280px;
+    height: 720px;
+    position : absolute;
+    top: 0;
+    left: 0;
+}
+/*
+Effet de flou 
+*/
+.flou{
+    
+}
+.visible{
+   visibility : visible;
+}
+.invisible{
+    visibility : hidden;
+}
+
+/*
+
+Zonne amource en haut 
+*/
+#preload {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1280px;
+  height: 720px;
+  z-index: 2;
+}
+#rouge_loader {
+  font-weight: bold;
+  line-height: 2.201;
+  border-radius: 50%;
+  background-color: rgb( 210, 31, 31 );
+  position: absolute;
+  left: 987px;
+  top: 95px;
+  width: 12px;
+  height: 13px;
+  z-index: 3;
+}
+#Bouton_rouge_loader {
+  font-size: 19.32px;
+  font-family: "Roboto";
+  color: rgb( 49, 49, 49 );
+  font-weight: bold;
+  line-height: 2.201;
+  text-align: left;
+  -moz-transform: matrix( 1.10602125658553,0,0,1.07825525977674,0,0);
+  -webkit-transform: matrix( 1.10602125658553,0,0,1.07825525977674,0,0);
+  -ms-transform: matrix( 1.10602125658553,0,0,1.07825525977674,0,0);
+  position: absolute;
+  left: 1019.637px;
+  top: 80px;
+  z-index: 3;
+}
+#fond_loader {
+  background-color: rgb( 255, 255, 255 );
+  opacity: 0.8;
+  position: absolute;
+  left: 965px;
+  top: 61px;
+  width: 315px;
+  height: 84px;
+}
+
+
+/*
+
+Contenu 
+*/
+#content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    color: red;
+}
+/*
+Helper Navigation en bas 
+*/
+.bas {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1280px;
+  height: 720px;
+}
+.bleu {
+  border-radius: 50%;
+  background-color: rgb( 59, 154, 228 );
+  position: absolute;
+  left: 1030px;
+  top: 625px;
+  width: 12px;
+  height: 13px;
+}
+.jaune {
+  border-radius: 50%;
+  background-color: rgb( 228, 196, 14 );
+  position: absolute;
+  left: 885px;
+  top: 625px;
+  width: 12px;
+  height: 13px;
+}
+.vert {
+  border-radius: 50%;
+  background-color: rgb( 26, 158, 44 );
+  position: absolute;
+  left: 725px;
+  top: 625px;
+  width: 13px;
+  height: 13px;
+}
+.rouge {
+  border-radius: 50%;
+  background-color: rgb( 210, 31, 31 );
+  position: absolute;
+  left: 596px;
+  top: 625px;
+  width: 13px;
+  height: 13px;
+}
+.Bbleu {
+  font-size: 19.32px;
+  font-family: "Roboto";
+  color: rgb( 49, 49, 49 );
+  font-weight: bold;
+  text-align: left;
+  -moz-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -webkit-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -ms-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  position: absolute;
+  left: 1057.954px;
+  top: 620px;
+  width: 76.593px;
+  height: 13.5px;
+}
+.Bjaune {
+  font-size: 19.32px;
+  font-family: "Roboto";
+  color: rgb( 49, 49, 49 );
+  font-weight: bold;
+  text-align: left;
+  -moz-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -webkit-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -ms-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  position: absolute;
+  left: 913.047px;
+  top: 620px;
+  width: 100px;
+  height: 13.5px;
+}
+.Bvert {
+  font-size: 19.32px;
+  font-family: "Roboto";
+  color: rgb( 49, 49, 49 );
+  font-weight: bold;
+  text-align: left;
+  -moz-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -webkit-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -ms-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  position: absolute;
+  left: 750px;
+  top: 620px;
+  width: 76.374px;
+  height: 13.5px;
+}
+.Brouge {
+  font-size: 19.32px;
+  font-family: "Roboto";
+  color: rgb( 49, 49, 49 );
+  font-weight: bold;
+  text-align: left;
+  -moz-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -webkit-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -ms-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  position: absolute;
+  left: 623.946px;
+  top: 620px;
+  width: 73.609px;
+  height: 14.5px;
+}
+.Valider {
+  font-size: 19.32px;
+  font-family: "Roboto";
+  color: rgb( 49, 49, 49 );
+  font-weight: bold;
+  text-align: left;
+  -moz-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -webkit-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -ms-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  position: absolute;
+  left: 399.882px;
+  top: 620px;
+  width: 60.11px;
+  height: 14px;
+}
+.Naviguer {
+  font-size: 19.32px;
+  font-family: "Roboto";
+  color: rgb( 49, 49, 49 );
+  font-weight: bold;
+  text-align: left;
+  -moz-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -webkit-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  -ms-transform: matrix( 1.10545612321376,0,0,1.10545612321376,0,0);
+  position: absolute;
+  left: 213.166px;
+  top: 620px;
+  width: 76.167px;
+  height: 18px;
+}
+#fleches{
+  position: absolute;
+  left: 160px;
+  top: 620px;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+}
+#ok{
+  position: absolute;
+  left: 350px;
+  top: 620px;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+}
+
+.Bare_blanche {
+  background-color: rgb( 255, 255, 255 );
+  opacity: 0.451;
+  position: absolute;
+  left: -29px;
+  top: 590px;
+  width: 1339px;
+  height: 85px;
+  z-index: -1;
+}
+
+
+/*
+
+Fond contenu
+*/
+#fond{
+    width: 1280px;
+    height: 720px;
+    background-image: url("../img/fond_1.png");
+    background-size: 100% auto;
+    position : absolute;
+    top: 0;
+    left: 0;
+    z-index: -2
+}
+
+
+/*
+Liste VOD
+
+*/
+.liste {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1280px;
+  height: 720px;
+}
+.vodMin{
+  background-color: pink;
+  background-image: url("../img/miniature.png");
+  background-size: auto 100%;
+  position: absolute;
+  width: 143px;
+  height: 80px;
+  z-index: 4;
+}
+#vod_9 {
+  left: 462px;
+  top: 300px;
+background-image: url("../img/9.png");  
+}
+#vod_8 {
+  left: 301px;
+  top: 300px;
+  background-image: url("../img/8.png");
+}
+#vod_7 {
+  left: 140px;
+  top: 300px;
+  background-image: url("../img/7.png");
+}
+#vod_6 {
+  left: 462px;
+  top: 201px;
+  background-image: url("../img/6.png");
+}
+#vod_5 {
+  left: 301px;
+  top: 201px;
+  background-image: url("../img/5.png");
+}
+#vod_4 {
+  left: 140px;
+  top: 201px;
+  background-image: url("../img/4.png");
+}
+#vod_3 {
+  left: 463px;
+  top: 103px;
+  background-image: url("../img/3.png");
+}
+#vod_2 {
+  left: 301px;
+  top: 103px;
+  background-image: url("../img/2.png");
+}
+#vod_1 {
+  left: 139px;
+  top: 103px;
+  background-image: url("../img/1.png");
+}
+
+
+
+
+
+.video_title {
+  font-family: "Roboto";
+  font-size: 60%;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-weight: lighter;
+  position: relative;
+  left: 10px;
+  top: 62px;
+  z-index: 5;
+}
+.video_title_background {
+  background: white;
+  opacity: 0.3;
+  position: relative;
+  left: 0px;
+  top: 45px;
+  width: 143px;
+  height: 24px;
+  z-index: 4;
+}
+
+
+.select {
+  box-shadow: 0px 0px 5px 5px rgba( 0,0,0, 0.5 );
+}
+
+
+
+
+/*
+Player 
+*/
+
+#player-video{
+  background-image: url("../img/fond.png");
+  background-size: 100%;
+  position: absolute;
+  left: 648px;
+  top: 103px;
+  width: 492px;
+  height: 277px;
+  z-index: 10;
+}
+
+.top-b{
+  position: absolute;
+  left: 648px;
+  top: 403px;
+  width: 492px;
+  height: 277px;
+  z-index: 9;
+}
+
+#video-content{
+  position : absolute;
+  width: 492px;
+  height: 277px;
+  z-index: 10;
+}
+
+#video-content video{
+  position: absolute;
+  left: 648px;
+  top: 103px;
+  width: 492px;
+  height: 277px;
+    z-index: 10;
+}
+
+
+.top{
+ 
+}
+
+.pastop{
+    z-index: 1;
+}
+
+.programme {
+  position: absolute;
+  left: 141px;
+  top: 410px;
+  width: 464px;
+  height: 150px;
+  background-color: white;
+  opacity: 0.8;
+}
+.event0 {
+    text-align: inline;
+    margin-bottom: -15px;
+}
+.Nom_du_programmes {
+  font-size: 15.32px;
+  font-family: "Helvetica";
+  color: rgb( 0, 0, 0 );
+  text-transform: uppercase;
+  line-height: 2.776;
+}
+.heure{
+  font-size: 15.32px;
+  font-family: "Helvetica";
+  color: rgb( 252, 96, 12 );
+  text-transform: uppercase;
+  line-height: 2.776;
+  padding-left: 5px;
+}
+
+#lepgm{
+    width: 460px;
+    height: 22px;
+    padding-left: 4px;
+    padding-top: 2px;
+    font-family: "Helvetica";
+    color: white;
+    background-color: rgb( 252, 96, 12 );
+}
